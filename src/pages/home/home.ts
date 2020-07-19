@@ -29,6 +29,14 @@ export class HomePage {
       name: "Sugar",
       quantity: 1    
     },
+    {
+      name: "Stawberry",
+      quantity: 4    
+    },
+    {
+      name: "Apple",
+      quantity: 2    
+    },
   ];
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, public alertCtrl: AlertController) {
@@ -68,7 +76,7 @@ export class HomePage {
       buttons: [
         {
           text: 'Cancel',
-          handler: data => {
+          handler: item => {
             console.log('Cancel clicked');
           }
         },
